@@ -1,0 +1,196 @@
+html{
+    text-align:center;
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+/*home*/
+.home{
+    background-image: url(./img/top-bg.jpg);
+    background-size: cover;
+}
+
+/*top-heading*/
+.top-heading{
+    text-align: center;
+    padding-top: 18%;
+    color: white;
+}
+.top-heading h1{
+    font-size: 80px;
+}
+.top-heading p{
+    font-size: 30px;
+}
+.top{
+    padding-bottom:20%;
+}
+
+/*top-contact*/
+.top-contact{
+    margin-top: 60px;
+    border: 2px solid #fff;
+    font-size: 20px;
+    display: inline-block;
+    padding: 10px 30px;
+}
+.top-contact a{
+    color:white;
+}
+.top-contact a:hover{
+    text-decoration: none;
+    color: white;
+}
+.top-contact:hover{
+    border: 2px solid rgb(63, 191, 191);
+    background-color:rgb(63, 191, 191, 0.1)
+}
+
+/*boxes*/
+.sample{
+    overflow: hidden;
+    position: relative; /*相対位置*/
+}
+.mask .caption{
+    font-size: 490%;
+    text-align: center;
+    margin-top: 75px;
+    color: #fff;
+    font-family: 'Permanent Marker', cursive;
+}
+.sample .caption-sub{
+    font-size:200%;
+    text-align:center;
+    color:#fff;
+    font-family: 'Permanent Marker', cursive;
+}
+.sample .mask{
+    width: 100%;
+    height: 100%;
+    position: absolute; /*絶対位置*/
+    top: 0;
+    left: 0;
+    opacity: 0;
+    background-color: rgb(0, 0, 0, 0.4);
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+.sample:hover .mask{
+    opacity: 1;
+}
+
+.flex-box{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    padding-top: 230px;
+}
+.box{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.box ul{
+    padding-top:100px;
+}
+.box li{
+    display: flex;
+    flex-wrap: wrap;
+    width: 30%;
+    margin:0 0 0 auto;
+    display: inline-block;
+}
+.box li img{
+    width: 100%;
+    margin: 0 0 auto;
+}
+
+
+
+/*footer*/
+
+.footer ul{
+    list-style:none;
+    padding-left: 0;
+}
+footer{
+    color:white;
+    width: 100%;
+    height: 100px;
+    margin: auto;
+    text-align: center;
+    padding-top:200px;
+    padding-bottom: 50px;
+}
+.footer li{
+    display: inline;
+    padding: 0 30px;
+    font-size: 20px;
+}
+
+@media (max-width: 670px){
+    .box li{
+        display: flex;
+        flex-wrap: wrap;
+        width: 40%;
+        margin:0 0 0 auto;
+        display: inline-block;
+    }
+    .top-heading{
+        text-align: center;
+        padding-top: 2%;
+        color: white;
+    }
+    .top-heading h1{
+        font-size: 50px;
+    }
+    .top-heading p{
+        font-size: 20px;
+    }
+    .top{
+        padding-bottom:2%;
+    }
+
+    .mask .caption{
+        font-size: 200%;
+        text-align: center;
+        margin-top: 75px;
+        color: #fff;
+        font-family: 'Permanent Marker', cursive;
+    }
+    .sample .caption-sub{
+        font-size:100%;
+        text-align:center;
+        color:#fff;
+        font-family: 'Permanent Marker', cursive;
+    }
+    
+    /*top-contact*/
+    .top-contact{
+        margin-top: 30px;
+        border: 2px solid #fff;
+        font-size: 20px;
+        display: inline-block;
+        padding: 10px 30px;
+    }
+    .top-contact a{
+        color:white;
+    }
+    .top-contact a:hover{
+        text-decoration: none;
+        color: white;
+    }
+    .top-contact:hover{
+        border: 2px solid rgb(63, 191, 191);
+        background-color:rgb(63, 191, 191, 0.1)
+    }
+
+    footer{
+        color:white;
+        width: 100%;
+        height: 100px;
+        margin: auto;
+        text-align: center;
+        padding-top:100px;
+    }
+}
